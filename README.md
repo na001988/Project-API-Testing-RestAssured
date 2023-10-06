@@ -14,3 +14,5 @@ To run the project follow this steps:
 5.- Right-click on class and run 
 6.- Verify steps passed on console
 7.- Verify logs on resources/app.log
+
+![test-rest-api-demo](https://github.com/na001988/Project-API-Testing-RestAssured/assets/49047445/f3106943-c5a4-49a4-956b-bdda433e2e40)
