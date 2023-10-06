@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import utils.Constants;
 
-public class verifyAPI extends BaseAPI{
+public class VerifyAPI extends BaseAPI{
 	
 	@Test
 	public void post_a_new_user() {
