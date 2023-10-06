@@ -7,14 +7,13 @@ import utils.Constants;
 
 public class verifyAPI extends BaseAPI{
 	
-	String r_id="4";
-
 	@Test
 	public void post_a_new_user() {
 
+		String user_id = null;
 		String loginPayloads = "{\"name\":\"%s\",\"job\":\"%s\"}";
 		
-		r_id = RestAssured.given()
+		user_id = RestAssured.given()
 		.spec(bearerTokenSpec)
 		.body(String.format(loginPayloads,"Sam2", "IT2"))
 		.when()
@@ -24,7 +23,7 @@ public class verifyAPI extends BaseAPI{
 		.extract()
 		.response().jsonPath().get("id").toString();	
 		
-		//System.out.println("1@@@@@ "+r_id);
+		System.out.println("created_user_id: "+user_id);
 	
 	}
 	
@@ -42,17 +41,16 @@ public class verifyAPI extends BaseAPI{
 
 	@Test (dependsOnMethods = {"get_all_users"})
 	public void get_a_user_by_id() {
-		
+		String user_id = "4";
 		RestAssured.given()
 				.spec(SpecAuth)
-				.param("id", r_id)
+				.param("id", user_id)
 				.when()
 				.get(Constants.usersById)
 				.then()
-				.assertThat().body("data.id", equalTo(Integer.parseInt(r_id)))
+				.assertThat().body("data.id", equalTo(Integer.parseInt(user_id)))
 				.assertThat().body("data.first_name", equalTo("Eve"))
 				.spec(common200Response);
-		
 	}
 
 }
