@@ -4,7 +4,7 @@ It uses ResponseSpecification and RequestSpecification to manage commmon request
 
 Pre-requisites:
 - Java 1.8
-- Maven
+- Intelij or Eclipse
 
 To run the project follow this steps:
 1.- Clone repo
