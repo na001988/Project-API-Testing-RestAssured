@@ -22,7 +22,6 @@ public class BaseAPI {
 	protected ResponseSpecification common200Response;
 	protected ResponseSpecification common201Response;
 	
-	
 	protected RequestSpecification bearerTokenSpec = new RequestSpecBuilder()
 			.setBaseUri(Constants.baseUrl)
 			.setAccept(ContentType.JSON)
@@ -56,7 +55,6 @@ public class BaseAPI {
 				.get(Constants.token_path).toString())
 				.build();
 		
-
 		myLog.debug("=====setUpSpecs=======");
 		myLog.info("StatusCode: "+response.getStatusCode());
 
@@ -76,15 +74,11 @@ public class BaseAPI {
 				.expectContentType("application/json")
 				.expectStatusCode(201)
 				.expectResponseTime(Matchers.lessThan(5000L))
-				.build();
-		
+				.build();	
 	}
-
 
 	@AfterSuite
 	public void cleanUpActivities() {
 		authToken = null;
 	}
-	
-
 }
