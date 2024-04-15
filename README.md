@@ -1,8 +1,8 @@
 # Project-API-Testing-RestAssured
-This project demonstrates API testing using Framework Rest-Assured, TestNG, and log4j libraries
-It uses ResponseSpecification and RequestSpecification to manage the common request and response calls from a class with @Test
+This project demonstrates API testing using Framework Rest-Assured, Java, TestNG, and log4j.
+The BaseApi class uses ResponseSpecification and RequestSpecification to manage request and response calls from the Verify class under the test cases with the annotation @Test.
 
-### Pre-requisites:
+### Pre-requisites to run locally:
 - Java 1.8 in path
 - Maven 3.0.9 in path
 - Intelij - Setup SDK
