@@ -1,19 +1,20 @@
 # Project-API-Testing-RestAssured
-This project demostrates API testing using Framework Rest-Assured, TestNG and log4j libraries
-It uses ResponseSpecification and RequestSpecification to manage commmon request and reponse calls from a class with @Test
+This project demonstrates API testing using Framework Rest-Assured, TestNG, and log4j libraries
+It uses ResponseSpecification and RequestSpecification to manage the common request and response calls from a class with @Test
 
 ### Pre-requisites:
 - Java 1.8
-- Intelij or Eclipse
+- Intelij
+- Setup SDK
+- Build project
 
 ### Steps to run the project:
 - 1.- Clone repo
-- 2.- Open project using Intelij or Eclipse
-- 3.- Build project
-- 4.- Locate the class: VerifyAPI.java 
-- 5.- Right-click on class and run 
-- 6.- Verify steps passed on console
-- 7.- Verify logs on resources/app.log
+- 2.- Open project using IntelliJ
+- 3.- Locate the class: VerifyAPI.java 
+- 4.- Right-click on class and run 
+- 5.- Verify steps passed on console
+- 6.- Verify logs on resources/app.log
 
 ### Sample output screens:
 
