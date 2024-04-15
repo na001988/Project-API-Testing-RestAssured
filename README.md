@@ -3,9 +3,9 @@ This project demonstrates API testing using Framework Rest-Assured, TestNG, and 
 It uses ResponseSpecification and RequestSpecification to manage the common request and response calls from a class with @Test
 
 ### Pre-requisites:
-- Java 1.8
-- Intelij
-- Setup SDK
+- Java 1.8 in path
+- Maven 3.0.9 in path
+- Intelij - Setup SDK
 - Build project
 
 ### Steps to run the project:
