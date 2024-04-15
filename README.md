@@ -7,13 +7,13 @@ It uses ResponseSpecification and RequestSpecification to manage commmon request
 - Intelij or Eclipse
 
 ### Steps to run the project:
-- [1.-] Clone repo
-- [2.-] Open project using Intelij or Eclipse
-3.- Build project
-4.- Locate the class: VerifyAPI.java 
-5.- Right-click on class and run 
-6.- Verify steps passed on console
-7.- Verify logs on resources/app.log
+- 1.- Clone repo
+- 2.- Open project using Intelij or Eclipse
+- 3.- Build project
+- 4.- Locate the class: VerifyAPI.java 
+- 5.- Right-click on class and run 
+- 6.- Verify steps passed on console
+- 7.- Verify logs on resources/app.log
 
 ### Sample output screens:
 
